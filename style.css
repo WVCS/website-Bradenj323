@@ -1,14 +1,11 @@
-h1 {
- 
-    font-size:90 px;
-text-align:center;
-   font-family: "Papyrus", "Courier New", monospace;
-  <
+body {
+  background:#B7FDFE;
+}
+h2 {
+  text-align:center;
+  font-size:30px;
 }
 
-body {
-  background:#BACDB0;
-}
 img {
   width: 15%;
   height: auto;
@@ -18,20 +15,37 @@ img {
   margin-right: auto;
 }
 
-h2 {
-  font-size:50 px;
-  text-align:center;
-}
-img:hover {
-  transition: 0.70s;
-  -webkit-transition: 0.70s;
-  -moz-transition: 0.70s;
-  -ms-transition: 0.70s;
-  -o-transition: 0.70s;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-} 
+.dropbtn {
+  background-color: #lightgrey;
+  color: black;
+  padding: 50px;
+  font-size: 40px;
+ font-family:Brush Script MT;
 
+  border: none; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #lightgrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: lightgrey;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: yellow;}
